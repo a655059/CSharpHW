@@ -46,16 +46,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Loan.cs">
+    <Compile Include="frm_LoanReport.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Loan.Designer.cs">
-      <DependentUpon>Loan.cs</DependentUpon>
+    <Compile Include="frm_LoanReport.Designer.cs">
+      <DependentUpon>frm_LoanReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Loan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Loan.Designer.cs">
+      <DependentUpon>frm_Loan.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Loan.resx">
-      <DependentUpon>Loan.cs</DependentUpon>
+    <EmbeddedResource Include="frm_Loan.resx">
+      <DependentUpon>frm_Loan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_LoanReport.resx">
+      <DependentUpon>frm_LoanReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

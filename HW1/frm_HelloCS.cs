@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace HW1
 {
-    public partial class HelloCS : Form
+    public partial class frm_HelloCS : Form
     {
-        public HelloCS()
+        public frm_HelloCS()
         {
             InitializeComponent();
         }
