@@ -124,6 +124,8 @@ namespace HW1
             // 
             // btnSayHello
             // 
+            this.btnSayHello.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSayHello.BackgroundImage")));
+            this.btnSayHello.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnSayHello.Font = new System.Drawing.Font("標楷體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnSayHello.Location = new System.Drawing.Point(42, 185);
             this.btnSayHello.Name = "btnSayHello";
@@ -135,6 +137,8 @@ namespace HW1
             // 
             // btnSayHi
             // 
+            this.btnSayHi.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSayHi.BackgroundImage")));
+            this.btnSayHi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnSayHi.Font = new System.Drawing.Font("標楷體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnSayHi.Location = new System.Drawing.Point(168, 185);
             this.btnSayHi.Name = "btnSayHi";
@@ -149,7 +153,7 @@ namespace HW1
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(333, 270);
+            this.ClientSize = new System.Drawing.Size(333, 265);
             this.Controls.Add(this.btnSayHi);
             this.Controls.Add(this.btnSayHello);
             this.Controls.Add(this.txtSign);
