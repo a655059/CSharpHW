@@ -1,7 +1,7 @@
 ﻿
 namespace HW1
 {
-    partial class Form1
+    partial class HelloCS
     {
         /// <summary>
         /// 設計工具所需的變數。
@@ -29,7 +29,7 @@ namespace HW1
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HelloCS));
             this.labName = new System.Windows.Forms.Label();
             this.labEnglishName = new System.Windows.Forms.Label();
             this.labGender = new System.Windows.Forms.Label();
