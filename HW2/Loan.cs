@@ -16,15 +16,5 @@ namespace HW2
         {
             InitializeComponent();
         }
-
-        private void btnPMT_Click(object sender, EventArgs e)
-        {
-            float r=0;
-            for (int i = 1; i <= Int32.Parse(txtDue.Text)*12; i++)
-            {
-                r += (1 + Int32.Parse(txtRate.Text) / 12)^i;
-            }
-            Messagebox.Show(r);
-        }
     }
 }
