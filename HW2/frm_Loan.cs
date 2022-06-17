@@ -30,16 +30,16 @@ namespace HW2
             {
                 r += Math.Pow(1.0 / (1.0 + ((Double.Parse(txtRate.Text) / 12.0) / 100.0)), i);
             }
-            double p = Double.Parse(txtAmount.Text) / r;
+            double p = (Double.Parse(txtAmount.Text)- Double.Parse(txtDown.Text)) / r;
             return p;
         }
         public int GetMonthPay()
         {
-            return Convert.ToInt32(Math.Floor(ComputeMonth()));
+            return Convert.ToInt32(Math.Round(ComputeMonth()));
         }
         public int GetTotalPay()
         {
-            return Convert.ToInt32(Math.Floor(ComputeMonth()) * Int32.Parse(txtDue.Text) * 12.0);
+            return Convert.ToInt32(Math.Round(ComputeMonth()) * Int32.Parse(txtDue.Text) * 12.0);
         }
         private void btnPMT_Click(object sender, EventArgs e)
         {
