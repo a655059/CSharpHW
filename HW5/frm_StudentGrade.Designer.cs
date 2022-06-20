@@ -42,8 +42,8 @@ namespace HW5
             this.btnStatistics = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
             this.btnRandomAdd20 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.txtStatistics = new System.Windows.Forms.TextBox();
+            this.txtResult = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // txtMath
@@ -169,29 +169,31 @@ namespace HW5
             this.btnRandomAdd20.Text = "隨機加入20筆";
             this.btnRandomAdd20.UseVisualStyleBackColor = true;
             // 
-            // textBox2
+            // txtStatistics
             // 
-            this.textBox2.Location = new System.Drawing.Point(132, 214);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(369, 112);
-            this.textBox2.TabIndex = 22;
+            this.txtStatistics.Font = new System.Drawing.Font("新細明體", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtStatistics.Location = new System.Drawing.Point(132, 214);
+            this.txtStatistics.Multiline = true;
+            this.txtStatistics.Name = "txtStatistics";
+            this.txtStatistics.Size = new System.Drawing.Size(482, 112);
+            this.txtStatistics.TabIndex = 22;
             // 
-            // richTextBox1
+            // txtResult
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(132, 12);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(369, 196);
-            this.richTextBox1.TabIndex = 23;
-            this.richTextBox1.Text = "";
+            this.txtResult.Font = new System.Drawing.Font("新細明體", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtResult.Location = new System.Drawing.Point(132, 12);
+            this.txtResult.Multiline = true;
+            this.txtResult.Name = "txtResult";
+            this.txtResult.Size = new System.Drawing.Size(482, 196);
+            this.txtResult.TabIndex = 23;
             // 
             // frm_StudentGrade
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(511, 338);
-            this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.textBox2);
+            this.ClientSize = new System.Drawing.Size(626, 338);
+            this.Controls.Add(this.txtResult);
+            this.Controls.Add(this.txtStatistics);
             this.Controls.Add(this.btnRandomAdd20);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnStatistics);
@@ -227,8 +229,8 @@ namespace HW5
         private System.Windows.Forms.Button btnStatistics;
         private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.Button btnRandomAdd20;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.TextBox txtStatistics;
+        private System.Windows.Forms.TextBox txtResult;
     }
 }
 

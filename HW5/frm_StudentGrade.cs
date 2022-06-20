@@ -16,9 +16,12 @@ namespace HW5
         {
             InitializeComponent();
         }
-
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            string result = "姓名\t\t國文\t英文\t數學\t總分\t平均\t最低\t最高\t\r\n";
+            result += txtName.Text + "\t\t" + txtChinese.Text + "\t" + txtEnglish.Text + "\t" + txtMath.Text;
+            txtResult.Text = result;
+
         }
     }
 }
