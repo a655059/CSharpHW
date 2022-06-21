@@ -48,6 +48,27 @@ namespace HW5
         }
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            btnStatistics.Enabled = true;
+            if (txtName.Text == "")
+            {
+                MessageBox.Show("請輸入姓名。","警告！",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                return;
+            }
+            else if(txtChinese.Text == "")
+            {
+                MessageBox.Show("請輸入國文成績。", "警告！", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            else if(txtEnglish.Text == "")
+            {
+                MessageBox.Show("請輸入英文成績。", "警告！", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            else if(txtMath.Text == "")
+            {
+                MessageBox.Show("請輸入數學成績。", "警告！", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             AddStudent(txtName.Text, Int32.Parse(txtChinese.Text), Int32.Parse(txtEnglish.Text), Int32.Parse(txtMath.Text));
             DisplayStudent(strNameList.Length - 1);
         }
@@ -64,8 +85,55 @@ namespace HW5
 
         private void btnRandomAdd_Click(object sender, EventArgs e)
         {
-            AddStudent(strNameList.Length, Int32.Parse(txtChinese.Text), Int32.Parse(txtEnglish.Text), Int32.Parse(txtMath.Text));
+            Random rdm = new Random();
+            btnStatistics.Enabled = true;
+            AddStudent((strNameList.Length+1).ToString(), rdm.Next(0,101), rdm.Next(0, 101), rdm.Next(0, 101));
             DisplayStudent(strNameList.Length - 1);
+        }
+
+        private void btnRandomAdd20_Click(object sender, EventArgs e)
+        {
+            Random rdm = new Random();
+            btnStatistics.Enabled = true;
+            for (int i = 0;i<20;i++)
+            {
+                AddStudent((strNameList.Length + 1).ToString(), rdm.Next(0, 101), rdm.Next(0, 101), rdm.Next(0, 101));
+                DisplayStudent(strNameList.Length - 1);
+            }
+        }
+
+        private void btnStatistics_Click(object sender, EventArgs e)
+        {
+            int totalChinese = 0, totalEnglish = 0, totalMath = 0;
+            btnAdd.Enabled = false;
+            btnRandomAdd.Enabled = false;
+            btnStatistics.Enabled = false;
+            btnRandomAdd20.Enabled = false;
+            for(int i = 0;i<intChineseList.Length;i++)
+            {
+                totalChinese += intChineseList[i];
+                totalEnglish += intEnglishList[i];
+                totalMath += intMathList[i];
+            }
+            double averageChinese = Math.Round(totalChinese * 1.0 / intChineseList.Length,1), averageEnglish = Math.Round(totalEnglish * 1.0 / intEnglishList.Length, 1), averageMath = Math.Round(totalMath * 1.0 / intMathList.Length, 1);
+            txtStatistics.Text = "總分\t\t" + totalChinese + "\t" + totalEnglish + "\t" + totalMath + "\r\n";
+            txtStatistics.Text += "平均\t\t" + averageChinese + "\t" + averageEnglish + "\t" + averageMath + "\r\n";
+            txtStatistics.Text += "最高分\t\t" + intChineseList.Max() + "\t" + intEnglishList.Max() + "\t" + intMathList.Max() + "\r\n";
+            txtStatistics.Text += "最低分\t\t" + intChineseList.Min() + "\t" + intEnglishList.Min() + "\t" + intMathList.Min() + "\r\n";
+        }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            btnAdd.Enabled = true;
+            btnRandomAdd.Enabled = true;
+            btnStatistics.Enabled = false;
+            btnRandomAdd20.Enabled = true;
+            txtResult.Text = "姓名\t\t國文\t英文\t數學\t總分\t平均\t最低\t最高\t\r\n";
+            txtStatistics.Text = "";
+            strNameList = new string[0];
+            intChineseList = new int[0];
+            intEnglishList = new int[0];
+            intMathList = new int[0];
         }
     }
 }

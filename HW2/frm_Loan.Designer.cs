@@ -172,6 +172,7 @@ namespace HW2
             this.Controls.Add(this.labAmount);
             this.Name = "frm_Loan";
             this.Text = "貸款金額計算";
+            this.Load += new System.EventHandler(this.frm_Loan_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

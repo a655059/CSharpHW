@@ -151,6 +151,7 @@ namespace HW5
             this.btnStatistics.TabIndex = 18;
             this.btnStatistics.Text = "各科統計";
             this.btnStatistics.UseVisualStyleBackColor = true;
+            this.btnStatistics.Click += new System.EventHandler(this.btnStatistics_Click);
             // 
             // btnReset
             // 
@@ -160,6 +161,7 @@ namespace HW5
             this.btnReset.TabIndex = 19;
             this.btnReset.Text = "重設所有資料";
             this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // btnRandomAdd20
             // 
@@ -169,6 +171,7 @@ namespace HW5
             this.btnRandomAdd20.TabIndex = 20;
             this.btnRandomAdd20.Text = "隨機加入20筆";
             this.btnRandomAdd20.UseVisualStyleBackColor = true;
+            this.btnRandomAdd20.Click += new System.EventHandler(this.btnRandomAdd20_Click);
             // 
             // txtStatistics
             // 
@@ -176,6 +179,7 @@ namespace HW5
             this.txtStatistics.Location = new System.Drawing.Point(132, 214);
             this.txtStatistics.Multiline = true;
             this.txtStatistics.Name = "txtStatistics";
+            this.txtStatistics.ReadOnly = true;
             this.txtStatistics.Size = new System.Drawing.Size(449, 112);
             this.txtStatistics.TabIndex = 22;
             // 
@@ -185,6 +189,8 @@ namespace HW5
             this.txtResult.Location = new System.Drawing.Point(132, 12);
             this.txtResult.Multiline = true;
             this.txtResult.Name = "txtResult";
+            this.txtResult.ReadOnly = true;
+            this.txtResult.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtResult.Size = new System.Drawing.Size(449, 196);
             this.txtResult.TabIndex = 23;
             this.txtResult.TextChanged += new System.EventHandler(this.txtResult_TextChanged);

@@ -55,11 +55,16 @@ namespace HW2
         {
             frm_LoanReport report = new frm_LoanReport();
             gAmount = Int32.Parse(txtAmount.Text);
-            gDue = Int32.Parse(txtDue.Text); ;
-            gRate = Int32.Parse(txtRate.Text); ;
+            gDue = Int32.Parse(txtDue.Text);
+            gRate = Int32.Parse(txtRate.Text);
             gMonthlyPay = GetMonthPay();
             gTotalPay = GetTotalPay();
             report.ShowDialog();
+        }
+
+        private void frm_Loan_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
