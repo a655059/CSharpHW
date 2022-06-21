@@ -45,6 +45,7 @@ namespace HW7
             this.btnSum = new System.Windows.Forms.Button();
             this.btnMax = new System.Windows.Forms.Button();
             this.btnMin = new System.Windows.Forms.Button();
+            this.btnReset = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labNumber
@@ -203,11 +204,22 @@ namespace HW7
             this.btnMin.UseVisualStyleBackColor = true;
             this.btnMin.Click += new System.EventHandler(this.btnMin_Click);
             // 
+            // btnReset
+            // 
+            this.btnReset.Location = new System.Drawing.Point(14, 172);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(150, 23);
+            this.btnReset.TabIndex = 16;
+            this.btnReset.Text = "清空結果欄";
+            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            // 
             // Myhomework_Method
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(637, 404);
+            this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnMin);
             this.Controls.Add(this.btnMax);
             this.Controls.Add(this.btnSum);
@@ -249,6 +261,7 @@ namespace HW7
         private System.Windows.Forms.Button btnSum;
         private System.Windows.Forms.Button btnMax;
         private System.Windows.Forms.Button btnMin;
+        private System.Windows.Forms.Button btnReset;
     }
 }
 

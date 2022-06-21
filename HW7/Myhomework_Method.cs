@@ -220,5 +220,10 @@ namespace HW7
             }
             labShowResult.Text += "]\r\n最小值為 " + arr0711.Min();
         }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            labShowResult.Text = "結果";
+        }
     }
 }
