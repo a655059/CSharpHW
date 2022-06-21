@@ -79,17 +79,33 @@ namespace HW3
             tequilacount = 0;
             whiskycount = 0;
             winecount = 0;
+            totalprice = 0;
             RefreshAll();
         }
 
         private void btnByCash_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("總金額: NT$" + totalprice);
+            if(totalprice == 0 )
+            {
+                MessageBox.Show("尚未點餐！", "確認付款", MessageBoxButtons.OK,MessageBoxIcon.Warning);
+            }
+            else
+            {
+                MessageBox.Show("總金額: NT$" + totalprice, "確認付款",MessageBoxButtons.OKCancel);
+            }
+            
         }
 
         private void btnByCard_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("總金額: NT$" + totalprice + "\n折扣後金額: NT$" + Math.Round(totalprice*0.9));
+            if (totalprice == 0)
+            {
+                MessageBox.Show("尚未點餐！", "確認付款", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                MessageBox.Show("總金額: NT$" + totalprice + "\n折扣後金額: NT$" + Math.Round(totalprice * 0.9), "確認付款", MessageBoxButtons.OKCancel);
+            }
         }
     }
 }
