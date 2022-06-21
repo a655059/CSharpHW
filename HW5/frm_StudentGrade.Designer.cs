@@ -140,6 +140,7 @@ namespace HW5
             this.btnRandomAdd.TabIndex = 17;
             this.btnRandomAdd.Text = "隨機儲存資料";
             this.btnRandomAdd.UseVisualStyleBackColor = true;
+            this.btnRandomAdd.Click += new System.EventHandler(this.btnRandomAdd_Click);
             // 
             // btnStatistics
             // 
@@ -175,7 +176,7 @@ namespace HW5
             this.txtStatistics.Location = new System.Drawing.Point(132, 214);
             this.txtStatistics.Multiline = true;
             this.txtStatistics.Name = "txtStatistics";
-            this.txtStatistics.Size = new System.Drawing.Size(482, 112);
+            this.txtStatistics.Size = new System.Drawing.Size(449, 112);
             this.txtStatistics.TabIndex = 22;
             // 
             // txtResult
@@ -184,14 +185,15 @@ namespace HW5
             this.txtResult.Location = new System.Drawing.Point(132, 12);
             this.txtResult.Multiline = true;
             this.txtResult.Name = "txtResult";
-            this.txtResult.Size = new System.Drawing.Size(482, 196);
+            this.txtResult.Size = new System.Drawing.Size(449, 196);
             this.txtResult.TabIndex = 23;
+            this.txtResult.TextChanged += new System.EventHandler(this.txtResult_TextChanged);
             // 
             // frm_StudentGrade
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(626, 338);
+            this.ClientSize = new System.Drawing.Size(587, 338);
             this.Controls.Add(this.txtResult);
             this.Controls.Add(this.txtStatistics);
             this.Controls.Add(this.btnRandomAdd20);
@@ -209,6 +211,7 @@ namespace HW5
             this.Controls.Add(this.labName);
             this.Name = "frm_StudentGrade";
             this.Text = "Myhomework";
+            this.Load += new System.EventHandler(this.frm_StudentGrade_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
