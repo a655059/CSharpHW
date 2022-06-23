@@ -92,7 +92,7 @@ namespace HW8
                 MessageBox.Show("請輸入數值。");
                 return;
             }
-            txtAnswer.Text = CheckDigits(n1 * n2);
+            txtAnswer.Text = CheckDigits(Math.Round(n1 * n2,4));
         }
 
         private void btnDivide_Click(object sender, EventArgs e)
@@ -102,7 +102,7 @@ namespace HW8
                 MessageBox.Show("請輸入數值。");
                 return;
             }
-            txtAnswer.Text = CheckDigits(n1 / n2);
+            txtAnswer.Text = CheckDigits(Math.Round(n1 / n2,4));
         }
     }
 }
