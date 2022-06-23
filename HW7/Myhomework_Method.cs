@@ -124,13 +124,22 @@ namespace HW7
                 {
                     if((i % 9) * (j % 9) == 0)
                     {
-                        temp[i, j] = 1;
-                        labShowResult.Text += "1 ";
+                        temp[i, j] = 1;                   
                     }
                     else
                     {
                         temp[i, j] = 0;
-                        labShowResult.Text += "0 ";
+                    }
+                }
+            }
+            for (int i = 0; i < 10; i++)
+            {
+                for (int j = 0; j < 10; j++)
+                {
+                    labShowResult.Text += temp[i, j];
+                    if (j != 9)
+                    {
+                        labShowResult.Text += " ";
                     }
                 }
                 labShowResult.Text += "\r\n";
@@ -149,12 +158,21 @@ namespace HW7
                     if ((i % 9) * (j % 9) == 0)
                     {
                         temp[i, j] = 0;
-                        labShowResult.Text += "0 ";
                     }
                     else
                     {
                         temp[i, j] = 1;
-                        labShowResult.Text += "1 ";
+                    }
+                }
+            }
+            for (int i = 0; i < 10; i++)
+            {
+                for (int j = 0; j < 10; j++)
+                {
+                    labShowResult.Text += temp[i, j];
+                    if (j != 9)
+                    {
+                        labShowResult.Text += " ";
                     }
                 }
                 labShowResult.Text += "\r\n";
@@ -172,12 +190,21 @@ namespace HW7
                     if (((i % 2) + (j % 2)) % 2 == 0)
                     {
                         temp[i, j] = 1;
-                        labShowResult.Text += "1 ";
                     }
                     else
                     {
                         temp[i, j] = 0;
-                        labShowResult.Text += "0 ";
+                    }
+                }
+            }
+            for (int i = 0; i < 10; i++)
+            {
+                for (int j = 0; j < 10; j++)
+                {
+                    labShowResult.Text += temp[i, j];
+                    if (j != 9)
+                    {
+                        labShowResult.Text += " ";
                     }
                 }
                 labShowResult.Text += "\r\n";

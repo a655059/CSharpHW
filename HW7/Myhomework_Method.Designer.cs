@@ -88,6 +88,7 @@ namespace HW7
             // 
             this.labShowResult.AutoSize = true;
             this.labShowResult.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.labShowResult.Font = new System.Drawing.Font("細明體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.labShowResult.Location = new System.Drawing.Point(55, 214);
             this.labShowResult.Name = "labShowResult";
             this.labShowResult.Size = new System.Drawing.Size(29, 12);

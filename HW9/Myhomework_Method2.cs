@@ -129,12 +129,21 @@ namespace HW9
                     if ((i % 9) * (j % 9) == 0)
                     {
                         temp[i, j] = 1;
-                        labShowResult.Text += "1 ";
                     }
                     else
                     {
                         temp[i, j] = 0;
-                        labShowResult.Text += "0 ";
+                    }
+                }
+            }
+            for (int i = 0; i < 10; i++)
+            {
+                for (int j = 0; j < 10; j++)
+                {
+                    labShowResult.Text += temp[i, j];
+                    if (j != 9)
+                    {
+                        labShowResult.Text += " ";
                     }
                 }
                 labShowResult.Text += "\r\n";
@@ -152,12 +161,21 @@ namespace HW9
                     if ((i % 9) * (j % 9) == 0)
                     {
                         temp[i, j] = 0;
-                        labShowResult.Text += "0 ";
                     }
                     else
                     {
                         temp[i, j] = 1;
-                        labShowResult.Text += "1 ";
+                    }
+                }
+            }
+            for (int i = 0; i < 10; i++)
+            {
+                for (int j = 0; j < 10; j++)
+                {
+                    labShowResult.Text += temp[i, j];
+                    if (j != 9)
+                    {
+                        labShowResult.Text += " ";
                     }
                 }
                 labShowResult.Text += "\r\n";
@@ -175,12 +193,21 @@ namespace HW9
                     if (((i % 2) + (j % 2)) % 2 == 0)
                     {
                         temp[i, j] = 1;
-                        labShowResult.Text += "1 ";
                     }
                     else
                     {
                         temp[i, j] = 0;
-                        labShowResult.Text += "0 ";
+                    }
+                }
+            }
+            for (int i = 0; i < 10; i++)
+            {
+                for (int j = 0; j < 10; j++)
+                {
+                    labShowResult.Text += temp[i, j];
+                    if (j != 9)
+                    {
+                        labShowResult.Text += " ";
                     }
                 }
                 labShowResult.Text += "\r\n";
@@ -293,7 +320,7 @@ namespace HW9
         private void btnTree_Click(object sender, EventArgs e)
         {
             int intRow;
-            bool flag = int.TryParse(txtFrom.Text, out intRow);
+            bool flag = int.TryParse(txtRow.Text, out intRow);
             if (!flag)
             {
                 MessageBox.Show("請輸入數值");
@@ -330,12 +357,28 @@ namespace HW9
 
         private void btnLottery_Click(object sender, EventArgs e)
         {
-            int[] lottery = new int[49];
+            //1-49
+            int[] lottery = new int[50], nums = new int[6];
             for(int i=1;i<50;i++)
             {
                 lottery[i - 1] = i;
             }
             Random random = new Random();
+            for (int i = 0;i<6;i ++)
+            {
+                int t = lottery[random.Next(0, 50)];
+                if ( nums.Contains(t) )
+                {
+                    i--;
+                    continue;
+                }
+                nums[i] = t;
+            }
+            labShowResult.Text = "樂透號碼\r\n  ";
+            for (int i = 0; i < 6; i++)
+            {
+                labShowResult.Text += nums[i] + " ";
+            }
         }
     }
 }

@@ -307,7 +307,7 @@ namespace HW9
             this.btnDo.Name = "btnDo";
             this.btnDo.Size = new System.Drawing.Size(60, 23);
             this.btnDo.TabIndex = 42;
-            this.btnDo.Text = "Do";
+            this.btnDo.Text = "do";
             this.btnDo.UseVisualStyleBackColor = true;
             this.btnDo.Click += new System.EventHandler(this.btnDo_Click);
             // 
@@ -372,7 +372,7 @@ namespace HW9
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(659, 450);
+            this.ClientSize = new System.Drawing.Size(659, 515);
             this.Controls.Add(this.btnLottery);
             this.Controls.Add(this.btnBinary);
             this.Controls.Add(this.btn99Table);
