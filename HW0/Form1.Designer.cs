@@ -31,7 +31,6 @@ namespace HW0
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btn_HW1 = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.btn_HW2 = new System.Windows.Forms.Button();
             this.btn_HW3 = new System.Windows.Forms.Button();
             this.btn_HW4 = new System.Windows.Forms.Button();
@@ -42,30 +41,41 @@ namespace HW0
             this.btn_HW9 = new System.Windows.Forms.Button();
             this.btn_HW10 = new System.Windows.Forms.Button();
             this.btn_HW11 = new System.Windows.Forms.Button();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.splitContainer2 = new System.Windows.Forms.SplitContainer();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel2.SuspendLayout();
+            this.splitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
+            this.splitContainer2.Panel1.SuspendLayout();
+            this.splitContainer2.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_HW1
             // 
-            this.btn_HW1.Location = new System.Drawing.Point(12, 12);
+            this.btn_HW1.AutoSize = true;
+            this.btn_HW1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_HW1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_HW1.Location = new System.Drawing.Point(0, 0);
+            this.btn_HW1.MinimumSize = new System.Drawing.Size(150, 0);
             this.btn_HW1.Name = "btn_HW1";
-            this.btn_HW1.Size = new System.Drawing.Size(176, 23);
+            this.btn_HW1.Padding = new System.Windows.Forms.Padding(3);
+            this.btn_HW1.Size = new System.Drawing.Size(165, 28);
             this.btn_HW1.TabIndex = 0;
             this.btn_HW1.Text = "HW1";
             this.btn_HW1.UseVisualStyleBackColor = true;
             this.btn_HW1.Click += new System.EventHandler(this.btn_HW1_Click);
             // 
-            // panel1
-            // 
-            this.panel1.Location = new System.Drawing.Point(194, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1051, 594);
-            this.panel1.TabIndex = 1;
-            // 
             // btn_HW2
             // 
-            this.btn_HW2.Location = new System.Drawing.Point(12, 41);
+            this.btn_HW2.AutoSize = true;
+            this.btn_HW2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_HW2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_HW2.Location = new System.Drawing.Point(0, 28);
+            this.btn_HW2.MinimumSize = new System.Drawing.Size(150, 0);
             this.btn_HW2.Name = "btn_HW2";
-            this.btn_HW2.Size = new System.Drawing.Size(176, 23);
+            this.btn_HW2.Padding = new System.Windows.Forms.Padding(3);
+            this.btn_HW2.Size = new System.Drawing.Size(165, 28);
             this.btn_HW2.TabIndex = 2;
             this.btn_HW2.Text = "HW2";
             this.btn_HW2.UseVisualStyleBackColor = true;
@@ -73,9 +83,14 @@ namespace HW0
             // 
             // btn_HW3
             // 
-            this.btn_HW3.Location = new System.Drawing.Point(12, 70);
+            this.btn_HW3.AutoSize = true;
+            this.btn_HW3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_HW3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_HW3.Location = new System.Drawing.Point(0, 56);
+            this.btn_HW3.MinimumSize = new System.Drawing.Size(150, 0);
             this.btn_HW3.Name = "btn_HW3";
-            this.btn_HW3.Size = new System.Drawing.Size(176, 23);
+            this.btn_HW3.Padding = new System.Windows.Forms.Padding(3);
+            this.btn_HW3.Size = new System.Drawing.Size(165, 28);
             this.btn_HW3.TabIndex = 3;
             this.btn_HW3.Text = "HW3";
             this.btn_HW3.UseVisualStyleBackColor = true;
@@ -83,9 +98,14 @@ namespace HW0
             // 
             // btn_HW4
             // 
-            this.btn_HW4.Location = new System.Drawing.Point(12, 99);
+            this.btn_HW4.AutoSize = true;
+            this.btn_HW4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_HW4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_HW4.Location = new System.Drawing.Point(0, 84);
+            this.btn_HW4.MinimumSize = new System.Drawing.Size(150, 0);
             this.btn_HW4.Name = "btn_HW4";
-            this.btn_HW4.Size = new System.Drawing.Size(176, 23);
+            this.btn_HW4.Padding = new System.Windows.Forms.Padding(3);
+            this.btn_HW4.Size = new System.Drawing.Size(165, 28);
             this.btn_HW4.TabIndex = 4;
             this.btn_HW4.Text = "HW4";
             this.btn_HW4.UseVisualStyleBackColor = true;
@@ -93,9 +113,14 @@ namespace HW0
             // 
             // btn_HW5
             // 
-            this.btn_HW5.Location = new System.Drawing.Point(12, 128);
+            this.btn_HW5.AutoSize = true;
+            this.btn_HW5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_HW5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_HW5.Location = new System.Drawing.Point(0, 112);
+            this.btn_HW5.MinimumSize = new System.Drawing.Size(150, 0);
             this.btn_HW5.Name = "btn_HW5";
-            this.btn_HW5.Size = new System.Drawing.Size(176, 23);
+            this.btn_HW5.Padding = new System.Windows.Forms.Padding(3);
+            this.btn_HW5.Size = new System.Drawing.Size(165, 28);
             this.btn_HW5.TabIndex = 5;
             this.btn_HW5.Text = "HW5";
             this.btn_HW5.UseVisualStyleBackColor = true;
@@ -103,9 +128,14 @@ namespace HW0
             // 
             // btn_HW6
             // 
-            this.btn_HW6.Location = new System.Drawing.Point(12, 157);
+            this.btn_HW6.AutoSize = true;
+            this.btn_HW6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_HW6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_HW6.Location = new System.Drawing.Point(0, 140);
+            this.btn_HW6.MinimumSize = new System.Drawing.Size(150, 0);
             this.btn_HW6.Name = "btn_HW6";
-            this.btn_HW6.Size = new System.Drawing.Size(176, 23);
+            this.btn_HW6.Padding = new System.Windows.Forms.Padding(3);
+            this.btn_HW6.Size = new System.Drawing.Size(165, 28);
             this.btn_HW6.TabIndex = 6;
             this.btn_HW6.Text = "HW6";
             this.btn_HW6.UseVisualStyleBackColor = true;
@@ -113,9 +143,14 @@ namespace HW0
             // 
             // btn_HW7
             // 
-            this.btn_HW7.Location = new System.Drawing.Point(12, 186);
+            this.btn_HW7.AutoSize = true;
+            this.btn_HW7.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_HW7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_HW7.Location = new System.Drawing.Point(0, 168);
+            this.btn_HW7.MinimumSize = new System.Drawing.Size(150, 0);
             this.btn_HW7.Name = "btn_HW7";
-            this.btn_HW7.Size = new System.Drawing.Size(176, 23);
+            this.btn_HW7.Padding = new System.Windows.Forms.Padding(3);
+            this.btn_HW7.Size = new System.Drawing.Size(165, 28);
             this.btn_HW7.TabIndex = 7;
             this.btn_HW7.Text = "HW7";
             this.btn_HW7.UseVisualStyleBackColor = true;
@@ -123,9 +158,14 @@ namespace HW0
             // 
             // btn_HW8
             // 
-            this.btn_HW8.Location = new System.Drawing.Point(12, 215);
+            this.btn_HW8.AutoSize = true;
+            this.btn_HW8.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_HW8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_HW8.Location = new System.Drawing.Point(0, 196);
+            this.btn_HW8.MinimumSize = new System.Drawing.Size(150, 0);
             this.btn_HW8.Name = "btn_HW8";
-            this.btn_HW8.Size = new System.Drawing.Size(176, 23);
+            this.btn_HW8.Padding = new System.Windows.Forms.Padding(3);
+            this.btn_HW8.Size = new System.Drawing.Size(165, 28);
             this.btn_HW8.TabIndex = 8;
             this.btn_HW8.Text = "HW8";
             this.btn_HW8.UseVisualStyleBackColor = true;
@@ -133,9 +173,14 @@ namespace HW0
             // 
             // btn_HW9
             // 
-            this.btn_HW9.Location = new System.Drawing.Point(12, 244);
+            this.btn_HW9.AutoSize = true;
+            this.btn_HW9.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_HW9.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_HW9.Location = new System.Drawing.Point(0, 224);
+            this.btn_HW9.MinimumSize = new System.Drawing.Size(150, 0);
             this.btn_HW9.Name = "btn_HW9";
-            this.btn_HW9.Size = new System.Drawing.Size(176, 23);
+            this.btn_HW9.Padding = new System.Windows.Forms.Padding(3);
+            this.btn_HW9.Size = new System.Drawing.Size(165, 28);
             this.btn_HW9.TabIndex = 9;
             this.btn_HW9.Text = "HW9";
             this.btn_HW9.UseVisualStyleBackColor = true;
@@ -143,9 +188,14 @@ namespace HW0
             // 
             // btn_HW10
             // 
-            this.btn_HW10.Location = new System.Drawing.Point(12, 273);
+            this.btn_HW10.AutoSize = true;
+            this.btn_HW10.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_HW10.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_HW10.Location = new System.Drawing.Point(0, 252);
+            this.btn_HW10.MinimumSize = new System.Drawing.Size(150, 0);
             this.btn_HW10.Name = "btn_HW10";
-            this.btn_HW10.Size = new System.Drawing.Size(176, 23);
+            this.btn_HW10.Padding = new System.Windows.Forms.Padding(3);
+            this.btn_HW10.Size = new System.Drawing.Size(165, 28);
             this.btn_HW10.TabIndex = 10;
             this.btn_HW10.Text = "HW10";
             this.btn_HW10.UseVisualStyleBackColor = true;
@@ -153,35 +203,85 @@ namespace HW0
             // 
             // btn_HW11
             // 
-            this.btn_HW11.Location = new System.Drawing.Point(12, 302);
+            this.btn_HW11.AutoSize = true;
+            this.btn_HW11.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_HW11.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_HW11.Location = new System.Drawing.Point(0, 280);
+            this.btn_HW11.MinimumSize = new System.Drawing.Size(150, 0);
             this.btn_HW11.Name = "btn_HW11";
-            this.btn_HW11.Size = new System.Drawing.Size(176, 23);
+            this.btn_HW11.Padding = new System.Windows.Forms.Padding(3);
+            this.btn_HW11.Size = new System.Drawing.Size(165, 28);
             this.btn_HW11.TabIndex = 11;
             this.btn_HW11.Text = "HW11";
             this.btn_HW11.UseVisualStyleBackColor = true;
             this.btn_HW11.Click += new System.EventHandler(this.btn_HW11_Click);
+            // 
+            // splitContainer1
+            // 
+            this.splitContainer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer1.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer1.Name = "splitContainer1";
+            this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer1.Panel1
+            // 
+            this.splitContainer1.Panel1.BackColor = System.Drawing.Color.Goldenrod;
+            this.splitContainer1.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel1_Paint);
+            // 
+            // splitContainer1.Panel2
+            // 
+            this.splitContainer1.Panel2.Controls.Add(this.splitContainer2);
+            this.splitContainer1.Size = new System.Drawing.Size(936, 623);
+            this.splitContainer1.SplitterDistance = 98;
+            this.splitContainer1.TabIndex = 12;
+            // 
+            // splitContainer2
+            // 
+            this.splitContainer2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer2.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer2.Name = "splitContainer2";
+            // 
+            // splitContainer2.Panel1
+            // 
+            this.splitContainer2.Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.splitContainer2.Panel1.Controls.Add(this.btn_HW11);
+            this.splitContainer2.Panel1.Controls.Add(this.btn_HW10);
+            this.splitContainer2.Panel1.Controls.Add(this.btn_HW9);
+            this.splitContainer2.Panel1.Controls.Add(this.btn_HW8);
+            this.splitContainer2.Panel1.Controls.Add(this.btn_HW7);
+            this.splitContainer2.Panel1.Controls.Add(this.btn_HW6);
+            this.splitContainer2.Panel1.Controls.Add(this.btn_HW5);
+            this.splitContainer2.Panel1.Controls.Add(this.btn_HW4);
+            this.splitContainer2.Panel1.Controls.Add(this.btn_HW3);
+            this.splitContainer2.Panel1.Controls.Add(this.btn_HW2);
+            this.splitContainer2.Panel1.Controls.Add(this.btn_HW1);
+            // 
+            // splitContainer2.Panel2
+            // 
+            this.splitContainer2.Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.splitContainer2.Size = new System.Drawing.Size(936, 521);
+            this.splitContainer2.SplitterDistance = 167;
+            this.splitContainer2.TabIndex = 0;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1257, 618);
-            this.Controls.Add(this.btn_HW11);
-            this.Controls.Add(this.btn_HW10);
-            this.Controls.Add(this.btn_HW9);
-            this.Controls.Add(this.btn_HW8);
-            this.Controls.Add(this.btn_HW7);
-            this.Controls.Add(this.btn_HW6);
-            this.Controls.Add(this.btn_HW5);
-            this.Controls.Add(this.btn_HW4);
-            this.Controls.Add(this.btn_HW3);
-            this.Controls.Add(this.btn_HW2);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btn_HW1);
+            this.ClientSize = new System.Drawing.Size(936, 623);
+            this.Controls.Add(this.splitContainer1);
             this.Name = "Form1";
             this.Text = "Homework";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.splitContainer1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
+            this.splitContainer1.ResumeLayout(false);
+            this.splitContainer2.Panel1.ResumeLayout(false);
+            this.splitContainer2.Panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
+            this.splitContainer2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -189,7 +289,6 @@ namespace HW0
         #endregion
 
         private System.Windows.Forms.Button btn_HW1;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btn_HW2;
         private System.Windows.Forms.Button btn_HW3;
         private System.Windows.Forms.Button btn_HW4;
@@ -200,6 +299,8 @@ namespace HW0
         private System.Windows.Forms.Button btn_HW9;
         private System.Windows.Forms.Button btn_HW10;
         private System.Windows.Forms.Button btn_HW11;
+        private System.Windows.Forms.SplitContainer splitContainer1;
+        private System.Windows.Forms.SplitContainer splitContainer2;
     }
 }
 
